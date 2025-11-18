@@ -2,7 +2,7 @@
     "name": "bkpsdm-karawang/sotk-php-client",
     "type": "library",
     "description": "PHP Client for Sistem Informasi Pegawai BKPSDM Karawang",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "authors": [
         {
             "name": "Denma Syarikin",
@@ -11,15 +11,15 @@
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/support": "^10|^11",
-        "illuminate/http": "^10|^11",
-        "illuminate/pagination": "^10|^11",
-        "illuminate/database": "^10|^11",
+        "illuminate/support": "^11|^12",
+        "illuminate/http": "^11|^12",
+        "illuminate/pagination": "^11|^12",
+        "illuminate/database": "^11|^12",
         "guzzlehttp/guzzle": "^7.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3",
-        "laravel/framework": "^10|^11"
+        "laravel/framework": "^11|^12"
     },
     "license": "MIT",
     "minimum-stability": "stable",
