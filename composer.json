@@ -2,7 +2,7 @@
     "name": "bkpsdm-karawang/sotk-php-client",
     "type": "library",
     "description": "PHP Client for Sistem Informasi Pegawai BKPSDM Karawang",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "authors": [
         {
             "name": "Denma Syarikin",

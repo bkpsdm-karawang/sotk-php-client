@@ -2,6 +2,7 @@
 
 namespace SotkClient\Registrar;
 
+use SotkClient\Modules\Lokasi\Alamat;
 use SotkClient\Modules\Lokasi\Desa;
 use SotkClient\Modules\Lokasi\Kabupaten;
 use SotkClient\Modules\Lokasi\Kecamatan;
@@ -9,6 +10,16 @@ use SotkClient\Modules\Lokasi\Provinsi;
 
 trait Lokasi
 {
+    /**
+     * Create an instance of the specified driver.
+     *
+     * @return \SotkClient\Modules\AbstractModule
+     */
+    protected function createLokasiAlamatDriver()
+    {
+        return new Alamat($this->client);
+    }
+
     /**
      * Create an instance of the specified driver.
      *

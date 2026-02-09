@@ -57,6 +57,8 @@ class RouteRegistrar
     public function moduleLokasi($middleware = null, $name = 'sotk')
     {
         $this->router->group($this->createGroup('lokasi', $middleware), function ($router) use ($name) {
+            $router->get('/alamat', ['uses' => 'Lokasi\AlamatController@getList', 'as' => $name . '.lokasi.alamat.list']);
+            $router->get('/alamat/{id}', ['uses' => 'Lokasi\AlamatController@getDetail', 'as' => $name . '.lokasi.alamat.detail']);
             $router->get('/provinsi', ['uses' => 'Lokasi\ProvinsiController@getList', 'as' => $name . '.lokasi.provinsi.list']);
             $router->get('/provinsi/{id}', ['uses' => 'Lokasi\ProvinsiController@getDetail', 'as' => $name . '.lokasi.provinsi.detail']);
             $router->get('/kabupaten', ['uses' => 'Lokasi\KabupatenController@getList', 'as' => $name . '.lokasi.kabupaten.list']);
